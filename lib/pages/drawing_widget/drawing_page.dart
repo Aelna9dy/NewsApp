@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:news_app/pages/settings_pages/settings.dart';
+import 'package:news_app/models/category_item/category_items.dart';
 import 'package:news_app/shared_component/theme/color.dart';
 
 class DrawingWidget extends StatefulWidget {
+  CategoryModel? selectedCategory;
+
+  DrawingWidget({required this.selectedCategory});
+
   @override
   State<DrawingWidget> createState() => _DrawingWidgetState();
 }
@@ -32,7 +36,7 @@ class _DrawingWidgetState extends State<DrawingWidget> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
             Padding(
@@ -58,14 +62,11 @@ class _DrawingWidgetState extends State<DrawingWidget> {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   GestureDetector(
-                    onTap: () {
-                      Navigator.pushReplacementNamed(
-                          context, SettingsPages.routeName);
-                    },
+                    onTap: () {},
                     child: Row(
                       children: [
                         const Icon(
