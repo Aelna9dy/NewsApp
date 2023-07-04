@@ -26,7 +26,7 @@ class _SplashPagesState extends State<SplashPages> {
         color: Colors.white,
         image: DecorationImage(
             image: AssetImage(
-              "assets/images/pattern.png",
+              "assets/images/backGround.png",
             ),
             fit: BoxFit.cover),
       ),
